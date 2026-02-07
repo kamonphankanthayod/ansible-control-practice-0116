@@ -1,0 +1,10 @@
+- name: Smoke test
+  hosts: sample_app_ansible_0116
+  gather_facts: no
+  tasks:
+    - name: Hello
+      ansible.builtin.debug:
+        msg: "Ansible is working"
+    - name: Hello2
+      ansible.builtin.debug:
+        msg: "Ansible is working 2"

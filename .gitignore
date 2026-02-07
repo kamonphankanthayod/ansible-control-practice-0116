@@ -1,0 +1,7 @@
+# Ansible inventory
+inventory.aws_ec2.yml
+
+# SSH keys
+*.pem
+*.key
+

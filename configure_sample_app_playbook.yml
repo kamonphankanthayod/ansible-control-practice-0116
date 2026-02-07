@@ -1,0 +1,8 @@
+---
+- name: Configure EC2 instance to run sample Node.js app
+  hosts: sample_app_ansible_0116
+  gather_facts: true
+  become: true
+  
+  roles:
+    - sample-app
