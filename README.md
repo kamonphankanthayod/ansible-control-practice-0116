@@ -44,7 +44,7 @@ The goal is to show how configuration management can replace manual server setup
 ---
 
 ## Project Structure
-
+```text
 ansible/
 ├── group_vars/
 │ └── sample_app_ansible_0116.yml
@@ -60,7 +60,7 @@ ansible/
 ├── smoke_test.yml
 ├── test_playbook.yml
 └── .gitignore
-
+```
 
 ---
 
@@ -98,14 +98,15 @@ ansible-playbook -i inventory.aws_ec2.yml configure_sample_app_playbook.yml
 ## Result
 
 Open in browser:
-
+```text
 http://<EC2-PUBLIC-IP>:8080
-
+```
 Expected output:
-
+```text
 Hello, World!
+```
 
-<img>
+![Result Image](ansible_successed_result%20-%20Copy.png)
 
 ---
 
